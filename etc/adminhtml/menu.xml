@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Crealevant_NameSaver::manage" title="Name Saver" translate="title" module="Crealevant_NameSaver" parent="Magento_Backend::content" dependsOnModule="Crealevant_NameSaver" resource="Crealevant_NameSaver::manage"/>
+        <add id="Crealevant_NameSaver::manage_namesaver" title="Manage Name Saver" translate="title" module="Crealevant_NameSaver" parent="Crealevant_NameSaver::manage" dependsOnModule="Crealevant_NameSaver" action="namesaver/index" resource="Crealevant_NameSaver::manage"/>
+    </menu>
+</config>

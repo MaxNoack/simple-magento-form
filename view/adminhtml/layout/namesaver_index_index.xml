@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Saved names</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Crealevant\NameSaver\Block\adminhtml\Index">
+                <block class="Magento\Backend\Block\Widget\Grid" name="crealevant_namesaver_grid.grid" as="grid">
+                    <arguments>
+                        <argument name="id" xsi:type="string">grid_id</argument>
+                        <argument name="dataSource" xsi:type="object">Crealevant\NameSaver\Model\ResourceModel\Collection\Collection</argument>
+                        <argument name="default_sort" xsi:type="string">firstname</argument>
+                        <argument name="default_dir" xsi:type="string">ASC</argument>
+                        <argument name="save_parameters_in_session" xsi:type="string">1</argument>
+                    </arguments>
+                    <block class="Magento\Backend\Block\Widget\Grid\ColumnSet" name="crealevant_namesaver_grid.grid.columnSet" as="grid.columnSet">
+                        <block class="Magento\Backend\Block\Widget\Grid\Column" as="firstname">
+                            <arguments>
+                                <argument name="header" xsi:type="string" translate="true">First Name</argument>
+                                <argument name="index" xsi:type="string">firstname</argument>
+                                <argument name="type" xsi:type="string">text</argument>
+                                <argument name="column_css_class" xsi:type="string">col-id</argument>
+                                <argument name="header_css_class" xsi:type="string">col-id</argument>
+                            </arguments>
+                        </block>
+                        <block class="Magento\Backend\Block\Widget\Grid\Column" as="lastname">
+                            <arguments>
+                                <argument name="header" xsi:type="string" translate="true">Last Name</argument>
+                                <argument name="index" xsi:type="string">lastname</argument>
+                                <argument name="type" xsi:type="string">text</argument>
+                                <argument name="column_css_class" xsi:type="string">col-id</argument>
+                                <argument name="header_css_class" xsi:type="string">col-id</argument>
+                            </arguments>
+                        </block>
+                    </block>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

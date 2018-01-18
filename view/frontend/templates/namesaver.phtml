@@ -1,0 +1,28 @@
+<form data-mage-init='{"validation":{}}' class="form" action="<?php echo $block->getFormAction() ?>" method="post">
+    <fieldset class="fieldset">
+        <div class="field">
+            <label class="label" for="firstname">
+                <span>First Name</span>
+            </label>
+            <div class="control">
+                <input type="text" id="firstname" name="firstname" class="input-text required-entry validate-no-html-tags validate-length maximum-length-255 minimum-length-1">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="lastname">
+                <span>Last Name</span>
+            </label>
+            <div class="control">
+                <input type="text" id="lastname" name="lastname" class="input-text required-entry validate-no-html-tags validate-length maximum-length-255 minimum-length-1">
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Save">
+                <span>Save</span>
+            </button>
+        </div>
+    </div>
+</form>
