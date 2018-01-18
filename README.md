@@ -1,5 +1,5 @@
 # responsive-search-engine
-A simple front end module created in Magento 2 to save first and last name
+A simple front end module created in Magento 2 to save first and last name to a custom database.
 
 <h3>Features</h3>
 - Add a name with field vailadtion to prevent SQLi and XSS.<br>
